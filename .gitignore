@@ -1,0 +1,15 @@
+/bin/
+/node_modules/
+/.pulumi/
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Pulumi secrets
+Pulumi.*.yaml
+
+# Exclude Pulumi.yaml, which is the project file
+!Pulumi.yaml

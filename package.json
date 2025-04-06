@@ -1,0 +1,23 @@
+{
+  "name": "repository-guardian",
+  "main": "index.ts",
+  "scripts": {
+    "start": "pulumi up",
+    "preview": "pulumi preview",
+    "destroy": "pulumi destroy",
+    "cli": "ts-node cli.ts",
+    "build": "tsc",
+    "postinstall": "mkdir -p reports"
+  },
+  "devDependencies": {
+    "@types/node": "^18",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@octokit/rest": "^19.0.13",
+    "@pulumi/github": "^5.0.0",
+    "@pulumi/pulumi": "^3.113.0",
+    "dotenv": "^16.3.1"
+  }
+}
